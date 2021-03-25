@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE_NAME = "rabah945/train-schedule"
+        DOCKER_IMAGE_NAME = "rabah945/train_schedule"
     }
     stages {
         stage('Build') {
