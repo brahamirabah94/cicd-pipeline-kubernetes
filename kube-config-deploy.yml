@@ -28,6 +28,7 @@ spec:
   selectors:
     matchLabels:
       env: prod
+      track: stable
   template:
     metadata:
       labels:
