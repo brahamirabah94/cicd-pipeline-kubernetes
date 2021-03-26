@@ -15,9 +15,7 @@ metadata:
   namespace: myname-space
 spec:
   selectors:
-    matchLables:
-      labels:
-        env: prod
+    env: prod
   type: nodePort
   ports:
   - protocol: TCP
