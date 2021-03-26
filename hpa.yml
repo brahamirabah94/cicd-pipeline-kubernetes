@@ -1,0 +1,17 @@
+apiVersion: autoscaling/v2beta2
+kind: HorizontalePodsAutoscale
+metadata:
+  name: autoscaling-deployment
+  labels:
+    env: prod
+  namespace: myname-space
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: deployment-first
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      targetAverageUtilization: 50
