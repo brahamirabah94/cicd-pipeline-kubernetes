@@ -35,6 +35,6 @@ spec:
     spec:
       containers:
       - name: count-deploy
-        image: $DOCKER_IMAGE_NAME:$BUILD_NUMBER
+        image: rabah945/devops-docker-repos:latest
         ports:
         - containerPort: 8080
